@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-family: 'Dosis', sans-serif;
+  background-color: #e4dede;
+  padding: 2rem;
+  font-size: 100%;
+}
+
+h1 {
+  margin: .5em;
+  letter-spacing: 10px;
+  font-size: calc(2rem + .5vw);
+}
+
+.perfume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 1em;
+}
+
+@media (max-width: 900px) {
+  .perfume {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.perfume .card {
+  position: relative;
+  margin: 1em;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 350px;
+  padding: 1em;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 400px;
+}
+
+.perfume .card img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.perfume .card .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 150%;
+  -webkit-box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  border-radius: 10px;
+}
+
+.perfume .card .textbox h2, .perfume .card .textbox button {
+  padding: 10px 20px;
+}
+
+.perfume .card .textbox h2 {
+  position: relative;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.perfume .card .textbox button {
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  background-color: #202020;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+  font-size: 1em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  margin: 10px 20px;
+}
+
+.perfume .card .textbox button:hover {
+  background-color: rgba(94, 31, 87, 0.897);
+}
+
+.perfume .card .textbox .desc {
+  position: absolute;
+  top: 150%;
+  right: 15%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 20px 30px;
+  -webkit-box-shadow: 2px 1px 10px #000;
+          box-shadow: 2px 1px 10px #000;
+  background-color: #d0d0d0b3;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border-radius: 10px;
+}
+
+.perfume .card .textbox .desc .list {
+  list-style: none;
+  text-align: left;
+}
+
+.perfume .card .textbox .desc .list li {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.perfume .card .textbox .desc .list li:before {
+  content: "";
+  position: absolute;
+  margin-left: -2rem;
+  background: url(/img/heart.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  -webkit-transform: translate(0, -30%);
+          transform: translate(0, -30%);
+}
+
+.perfume .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.perfume .card:hover .desc {
+  top: 30%;
+}
+/*# sourceMappingURL=perfumery.css.map */
